@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:tag="cards main container">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center_horizontal"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardElevation="10dp"
+        card_view:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:id="@+id/linearLayout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    />
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressssss"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:id="@+id/linearLayouttwo"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:text="Title Here"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:id="@+id/shopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:text="Shop name"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:text="Price here"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="5dp" />
+            <!--<TextView-->
+                <!--android:id="@+id/discount"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:textSize="10sp"-->
+                <!--android:text="Discount"-->
+                <!--android:textStyle="bold"-->
+                <!--android:ellipsize="end"-->
+                <!--android:maxLines="1"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:layout_marginTop="10dp" />-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/link"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:background="@drawable/buttonstyle"
+                    android:layout_gravity="center"
+                    android:text="Online"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <Button
+                    android:id="@+id/local"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="60dp"
+                    android:padding="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttonstyle"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_gravity="center"
+                    android:text="Local"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+
